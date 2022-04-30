@@ -1,0 +1,57 @@
+-- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
+--
+-- Host: localhost    Database: crm
+-- ------------------------------------------------------
+-- Server version	8.0.28
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `tbl_clue_remark`
+--
+
+DROP TABLE IF EXISTS `tbl_clue_remark`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_clue_remark` (
+  `id` char(32) NOT NULL,
+  `noteContent` varchar(255) DEFAULT NULL,
+  `createBy` varchar(255) DEFAULT NULL,
+  `createTime` char(19) DEFAULT NULL,
+  `editBy` varchar(255) DEFAULT NULL,
+  `editTime` char(19) DEFAULT NULL,
+  `editFlag` char(1) DEFAULT NULL,
+  `clueId` char(32) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_clue_remark`
+--
+
+LOCK TABLES `tbl_clue_remark` WRITE;
+/*!40000 ALTER TABLE `tbl_clue_remark` DISABLE KEYS */;
+INSERT INTO `tbl_clue_remark` VALUES ('0a7e80949a084a5c8b9d7454e3b7126d','Test02','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-21 11:19:24','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-21 11:19:24','0','50a6034c942e4304bdf3ed933d8f3966'),('3782e292a93b4f65adcf52137bb8ae94','test05','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-21 12:39:34','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-21 14:10:10','1','50a6034c942e4304bdf3ed933d8f3966'),('56abbd94edda4ebc9f411a0fb7288261','Test06','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-24 18:54:31','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-24 18:54:39','1','50a6034c942e4304bdf3ed933d8f3966'),('94e8cf1d131f42839b69be2fe76d39e6','Good job','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-29 00:20:00','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-29 00:20:00','0','c9508e5133904299822ce127503d5026'),('9a5feea0f2284e7a90adc61c65e88675','Just go on....','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-29 00:20:06','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-29 00:20:13','1','c9508e5133904299822ce127503d5026');
+/*!40000 ALTER TABLE `tbl_clue_remark` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-04-30  2:24:12

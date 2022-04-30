@@ -1,0 +1,57 @@
+-- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
+--
+-- Host: localhost    Database: crm
+-- ------------------------------------------------------
+-- Server version	8.0.28
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `tbl_customer_remark`
+--
+
+DROP TABLE IF EXISTS `tbl_customer_remark`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_customer_remark` (
+  `id` char(32) NOT NULL,
+  `noteContent` varchar(255) DEFAULT NULL,
+  `createBy` varchar(255) DEFAULT NULL,
+  `createTime` char(19) DEFAULT NULL,
+  `editBy` varchar(255) DEFAULT NULL,
+  `editTime` char(19) DEFAULT NULL,
+  `editFlag` char(1) DEFAULT NULL,
+  `customerId` char(32) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_customer_remark`
+--
+
+LOCK TABLES `tbl_customer_remark` WRITE;
+/*!40000 ALTER TABLE `tbl_customer_remark` DISABLE KEYS */;
+INSERT INTO `tbl_customer_remark` VALUES ('430363c308b0402f9d0e789361ef5471','Test01','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-25 00:10:13','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-25 00:10:13','0','d0b0887e079a40e0a5cd91272734158b'),('49899966b54041e19c7106208fd7b321','Good job','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-29 00:40:57','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-29 00:40:57','0','6cf7330ba1ee4ff38ea6c895c9f6a5f9'),('614862f43b94467185543bb0f9675c5b','Good job','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-29 00:21:29','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-29 00:21:29','0','0e740749f21e4ced9ce6a3d1d126ddf7'),('63217bc4684947d599ae8d55677be143','Test02','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-24 13:05:48','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-24 13:05:48','0','36e5c9707d644af3906b2c03a161aa25'),('7e743523dadf43e4a0155a9837303f6d','Test05','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-24 19:02:42','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-24 19:02:42','0','9b1b2899fd4e4f0abdd359b95db28f32'),('a74fec7f7d4740b596c68b9f7b68ad88','Test04','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-24 18:55:03','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-24 21:36:14','1','9b1b2899fd4e4f0abdd359b95db28f32'),('b025f4d04a1c4667bcb32a1785208696','Test02','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-25 00:10:21','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-25 00:10:29','1','d0b0887e079a40e0a5cd91272734158b'),('c54536af1b124bcdb97649e6c0e61c82','test05','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-24 13:05:48','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-24 13:05:48','1','36e5c9707d644af3906b2c03a161aa25'),('c9397db0695d410eb9b4c29607f4f16d','Just go on....','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-29 00:21:29','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-29 00:21:29','1','0e740749f21e4ced9ce6a3d1d126ddf7'),('d90fc3b1e3cb4621934c9980450e8399','Just go on....','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-29 00:40:57','40f6cdea0bd34aceb77492a1656d9fb3','2022-04-29 00:40:57','1','6cf7330ba1ee4ff38ea6c895c9f6a5f9');
+/*!40000 ALTER TABLE `tbl_customer_remark` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-04-30  2:24:11
